@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+/* --------------------ПЕРЕНОС------------------- */
+}
+.conteiner{
+max-width: 1200px;
+padding: 10px;
+margin: 0 auto;
+}
+
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galery__item{
+    height: 200px;
+    border-radius: 10px;
+    min-width: 200px;
+    background-color: chartreuse;
+    color: black;
+    border: 1px solid blue;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+}
+
+/* --------------------ПРОПОРЦІЯ------------------- */
+h1{
+   font-size: 56px;
+   font-weight: 500; 
+}
+
+h2{
+   font-size: 32px;
+   font-weight: 500; 
+}
+
+.conteiner__2{
+max-width: 1200px;
+padding: 10px;
+margin: 0 auto;
+}
+
+.loyout{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main{
+    flex: 2;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    background-color: chocolate;
+    color: black;
+
+}
+
+.sidebar{
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    color: black;
+}
+
+
+/* ------------------------------------------------------- */
+@media (max-width: 1200px){
+    h1{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 16px;
+    }
+}
+/* --------------------------------------------------------- */

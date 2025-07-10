@@ -1,3 +1,4 @@
+/* ---------------CONTEINER---------- */
 .conteiner{
     max-width: 1110px;
     width: 100%;
@@ -18,7 +19,8 @@ body{
     background-color: #EEEFF1;
     /* background-color: aqua; */
     /* height: 70vh; */
-    max-height: 700px;
+    /* max-height: 700px; */
+    min-height: 100vh;
     height: 100%;
 }
 
@@ -26,7 +28,7 @@ body{
     margin-bottom: 65px;
 }
 
-.hero__cintainer{
+.hero__container{
     display: flex;
     flex-direction: column;
 }
@@ -169,4 +171,147 @@ color: white;
 .footer__autor{
     margin-bottom: 20px;
 }
+/* ------------------------------------ */
+
+.video__img{
+    width: 1110px; 
+    height: 600px;
+}
+
+
+/* --------------POINTS---------------- */
+/* ---------------375 px--------------- */
+@media (max-width: 375px) {
+
+h1, h2, h3, p, nav  {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 60px;
+    
+}
+
+h1+p{
+    margin-top: 60px;
+
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;    
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 12px;
+}
+
+nav ul{
+    gap: 22px;
+}
+
+
+.conteiner{
+    max-width: 375px;
+    width: 100%;
+}
+
+body{
+    font-size: 14px;
+
+}
+
+.hero{
+    padding: 40px 0 100px;
+    background-color: #EEEFF1;
+    /* background-color: aqua; */
+    /* height: 70vh; */
+    /* max-height: 700px; */
+    min-height: 50vh;
+    height: 100%;
+}
+
+/* -------------------------- */
+
+.video__img{
+    width: 200px; 
+    height: auto;
+}
+
+.video__img__2{
+    width: 40px; 
+    height: auto;
+}
+
+/* -------------------------- */
+
+.advanteges{
+padding: 20px 8px;
+padding-left: 0px;
+padding-right: 0px;
+
+/* display: flex;
+flex-wrap: wrap; */
+}
+
+.advanteges__item{
+gap: 8px;
+}
+
+.advanteges__item h3{
+    font-size: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.advanteges__item p{
+    font-size: 8px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.advanteges__icon{
+   height: 14px;
+   width: 14px; 
+}
+
+.advanteges__list{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+/* ---------------------------------------- */
+
+.footer{
+    padding: 16px 0;
+}
+
+.footer h3{
+    font-size: 14px;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+/* ------------------------------------ */
+
+button{
+    padding: 12px 20px;
+    font-size: 10px;
+    margin-left: 8px;
+}
+
+
+}
+
 /* ------------------------------------ */
