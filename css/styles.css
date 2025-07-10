@@ -34,8 +34,22 @@ body{
 }
 
 /* .hero__wraper{
-
+display: flex;
+flex-wrap: wrap;
 } */
+
+.menu__wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advanteges__wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
 h1+p{
     color: #727272;
@@ -154,6 +168,13 @@ color: white;
     justify-content: center;
     margin-top: 60px;
 }
+
+.video__img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ------------------------------------ */
 
 /* ---------------FOOTER--------------- */
@@ -215,7 +236,8 @@ p{
 }
 
 nav ul{
-    gap: 22px;
+    gap: 8px;
+    font-size: 10px;
 }
 
 
