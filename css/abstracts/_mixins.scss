@@ -1,0 +1,13 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin button_style {
+    padding: 24px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
