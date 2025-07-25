@@ -217,13 +217,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content:left;
+    margin-left: 124px;
 }
 .footer__botom{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--maine_color);
-    padding: 80px 124px 56px;
+    padding: 80px 56px;
 }
 .footer__icons{
     display: flex;
