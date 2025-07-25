@@ -1,0 +1,49 @@
+@font-face{
+    font-family: DM Sans;
+    src: url("../assets/fonts/DMSans-regular.ttf");
+    font-weight: 400;
+}
+@font-face{
+    font-family: DM Sans;
+    src: url("../assets/fonts/DMSans-medium.ttf");
+    font-weight: 500;
+}
+.footer__h1{
+    font-size: 60px;
+    padding-bottom: 32px;
+}
+h1{
+    font-size: 96px;
+}
+h2{
+    font-size: 36px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h4+h5{
+    color: var(--grey_color);
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+h2+h5{
+    color: var(--maine_color);
+    padding-top: 8px;
+
+}
+img+h4{
+    text-transform: uppercase;
+    padding-top: 16px;
+}
+h5+h5{
+    padding-bottom: 16px; 
+}
+.footer__h1+h5{
+    padding-bottom: 16px; 
+}
+
+
+
