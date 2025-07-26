@@ -1,14 +1,32 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 html{
-font-size: 16px;
-font-family: 'DM Sans', sans-serif;
-line-height: 1.5;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.5;
+}
+button{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    padding: 12px 16px;
+    line-height: 1.5;
+    background-color: transparent;
+    border: 0 solid transparent;
+    cursor: pointer;
+}
+.btn__maine{
+    color: var(--white_color);
+    background-color: var(--maine_color);
+}
+.btn__transp{
+    color: var(--maine_color);
+    border: solid 1px var(--maine_color);
 }
 .container{
-    max-width: 1440px;
-    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -20,7 +38,6 @@ header{
     position: sticky;
     top: 0;
     background-color: var(--white_color);
-    /* position: relative; */
     z-index: 10;
 }
 .menu{
@@ -39,43 +56,12 @@ header{
     font-size: 36px;
     color: var(--maine_color);
 }
-.btn__1{
-    font-size: 16px;
-    color: white;
-    background-color: var(--maine_color);
-    border: none; 
-    height: 48px;
-    width: 94px;
-    padding: 12px 16px 12px;
-}
-.btn__2{
-    font-size: 16px;
-    color: var(--maine_color);
-    background-color: transparent;
-    border: solid 1px var(--maine_color);
-    height: 48px;
-    width: 94px;
-    padding: 12px 16px 12px;
-}
-.btn__3{
-    font-size: 16px;
-    color: var(--maine_color);
-    background-color: transparent;
-    border: solid 1px var(--maine_color);
-    height: 48px;
-    width: 116px;
-    padding: 12px 16px 12px;
-}
 /* --------------HERO ---------------------*/
 .hero{
     margin-bottom: 48px;
-    margin-right: 124px;
-    margin-left: 124px;
 }
-p{
-    font-size: 20px;
-    padding-right: 414px;
-    padding-top: 32px;
+.hero__container{
+    max-width: 778px;
 }
 /* -----------------------SEARCH ---------------*/
 .search{
@@ -84,9 +70,7 @@ p{
 .search__container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 124px;
-    margin-right: 124px;
+    gap: 48px;
 }
 .search__buttons{
    display: flex;
@@ -115,7 +99,6 @@ p{
 .buttons{
    display: flex;
    align-items: center;
-   justify-content: space-between;
 }
 .search__buttons__clear{
     color: var(--red_color); 
@@ -154,11 +137,12 @@ p{
 }
 /* ----------MARKET------------- */
 .market{
-margin-left: 80px;
-margin-right: 88px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .market__item{
     display: flex;
+    /* flex: 1; */
     flex-direction: column;
     position: relative;
     z-index: 1;
@@ -198,9 +182,11 @@ margin-right: 88px;
 footer{
     margin-top: 80px;
     background-color: #121212;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.footer__h1{
+    font-size: 60px;
+    padding-bottom: 32px;
+    padding-top: 56px;
 }
 .footer__info{
     display: flex;
@@ -217,7 +203,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content:left;
-    margin-left: 124px;
 }
 .footer__botom{
     display: flex;

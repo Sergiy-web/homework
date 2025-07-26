@@ -8,10 +8,6 @@
     src: url("../assets/fonts/DMSans-medium.ttf");
     font-weight: 500;
 }
-.footer__h1{
-    font-size: 60px;
-    padding-bottom: 32px;
-}
 h1{
     font-size: 96px;
 }
@@ -22,6 +18,9 @@ h4{
     font-size: 24px;
 }
 h5{
+    font-size: 20px;
+}
+p{
     font-size: 20px;
 }
 h4+h5{
