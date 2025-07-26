@@ -20,8 +20,8 @@ h4{
 h5{
     font-size: 20px;
 }
-p{
-    font-size: 20px;
+h1+h5{
+    padding-top: 32px;
 }
 h4+h5{
     color: var(--grey_color);
