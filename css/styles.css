@@ -6,7 +6,16 @@ html{
     font-family: 'DM Sans', sans-serif;
     line-height: 1.5;
 }
-button{
+input{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif; 
+}
+input::placeholder{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--grey_color); 
+}
+.button{
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
@@ -24,6 +33,15 @@ button{
     color: var(--maine_color);
     border: solid 1px var(--maine_color);
 }
+.btn__clr{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    color: var(--grey_color);
+}
 .container{
     max-width: 1190px;
     margin: 0 auto;
@@ -39,18 +57,20 @@ header{
     top: 0;
     background-color: var(--white_color);
     z-index: 10;
+    /* margin-right: 100px;
+    margin-left: 100px; */
+}
+.container__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
 }
 .menu{
     display: flex;
     align-items: center;
     gap: 24px;
     font-size: 20px;
-}
-.container__menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 100px;
 }
 .container__logo{
     font-size: 36px;
@@ -67,31 +87,28 @@ header{
 .search{
     margin-bottom: 48px;
 }
-.search__container{
+.form__input__wraper{
+    position: relative;
+}
+.form__heder{
     display: flex;
     align-items: center;
-    gap: 48px;
+    justify-content: space-between;
 }
-.search__buttons{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+.form__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    padding-left: 48px;
 }
-.search__find{
-  font-size: 16px;
-  width: 574px;
-  height: 56px;
-  }
-.search__price{
-  font-size: 16px;
-  width: 261px;
-  height: 56px;
+.form__pic{
+    position: absolute;
+    top: 16px;
+    left: 20px;
 }
-.search__sort{
-  font-size: 16px;
-  width: 261px;
-  height: 56px;
-}
+
 /* ---------BUTTONS PANEL------------ */
 .buttons__panel{
     margin-bottom: 48px;
@@ -99,75 +116,43 @@ header{
 .buttons{
    display: flex;
    align-items: center;
+   justify-content: space-between;
 }
-.search__buttons__clear{
-    color: var(--red_color); 
-    background: none;
-    border: none;
-}
-.button__coffee{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: solid 1px #E3E3E3;
-    border-bottom: solid 1px #E3E3E3;
-    height: 92px;
-    width: 480px;
+.button__item{
     background-color: transparent;
+    border-width: 1px;  
+    border-left: 0;
+    border-right: 0;
+    padding: 32px;
+    flex: 1;
+    font-size: 16px;
+    border-color: var(--grey_color); 
+    border-style: solid; 
 }
-.button__food{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: solid 1px var(--black_color);
-    border-bottom: solid 1px var(--black_color);
-    height: 92px;
-    width: 480px;
-    background-color: transparent;
-}
-.button__home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: solid 1px #E3E3E3;
-    border-bottom: solid 1px #E3E3E3;
-    height: 92px;
-    width: 480px;
-    background-color: transparent;
+.button__item__active{
+    border-color: var(--black_color);
 }
 /* ----------MARKET------------- */
 .market{
     padding-left: 80px;
     padding-right: 80px;
 }
-.market__item{
-    display: flex;
-    /* flex: 1; */
-    flex-direction: column;
+.market__img-wrap{
     position: relative;
-    z-index: 1;
 }
-.market__item__img{
-    display: flex;
-    height: 300px;
-    width: 300px;  
-}
-.market__wraper{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-.sale{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--red_color);
-    color: var(--white_color);
-    height: 52px;
-    width: 92px;
+.market__item__lable{
     position: absolute;
     top: 0;
     left: 0;
+    padding: 12px 20px;
+    font-size: 20px;
+    background-color: var(--red_color);
+    color: var(--white_color);
+    text-transform: uppercase;
+}
+.market__item__img{
+    height: 300px;
+    width: 300px;
 }
 /* --------------LOAD MORE----------------- */
 .load_btn{
