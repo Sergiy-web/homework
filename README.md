@@ -1,6 +1,5 @@
-# JS Home Work 2
+# JS Home Work 3
 ## Functions
-- random
-- greet
-- sum big int
-### //SCRIPTS/HW2/functions.js
+- 
+
+### //SCRIPTS/HW3/main.js
