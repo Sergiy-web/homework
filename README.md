@@ -1,10 +1,9 @@
-# JS Home Work 4
+# JS Home Work 5
 ## Functions
-- 4 functions / currying
+- counter
+- counterFactory
+- 
 
-### //SCRIPTS/HW4/index.html
-### //SCRIPTS/HW4/
-- curriedAdd.js
-- curriedDomain.js
-- nestedFunctions.js
-- modifyFunction.js
+### //SCRIPTS/HW5/index.html
+### //SCRIPTS/HW5/
+
