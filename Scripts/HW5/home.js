@@ -108,20 +108,46 @@ console.log(counterFactory.value()) // 201
  */
 // const myPrint = () => {}
 // const myPow = () => {}
+
+// const myPrint = (a, b, res) => {
+//     return `${a}^${b}=${res}`
+// }
+// const myPow = (a, b, myPrint) => {
+//     let res = 1;
+//     const n = Math.abs(b);
+// for(let i=1; i<=n; i++) {
+//         res = res * a;   
+//     }
+// if (b<0) {
+//     res = 1 / res;   
+// }
+//         return myPrint (a, b, res);
+// }
+
 const myPrint = (a, b, res) => {
     return `${a}^${b}=${res}`
 }
+
 const myPow = (a, b, myPrint) => {
     let res = 1;
     const n = Math.abs(b);
-for(let i=1; i<=n; i++) {
-        res = res * a;   
-    }
+    
+    return function (a, b) {
+if (b===0) {
+    res = 1;
+    return myPrint (a, b, res);
+}
+if (b>0) {
+return myPrint (a, b, res);
+}
 if (b<0) {
-    res = 1 / res;   
+    res = 1 / res;
+    return myPrint (a, b, res);
 }
-        return myPrint (a, b, res);
+
 }
+}
+
 console.log(myPow(3, 4, myPrint)) // 3^4=81
 console.log(myPow(2, 3, myPrint)) // 2^3=8
 console.log(myPow(2, 0, myPrint)) // 2^0=1
