@@ -1,7 +1,7 @@
-# JS Home Work 8
-## Demonstration object window, coocies, localstorage
+# JS Home Work 9
+## Demonstration Events
 #### 3 exercise
 
-### //SCRIPTS/HW8/index.html
-### //SCRIPTS/HW8/home.js
+### //SCRIPTS/HW9/index.html
+### //SCRIPTS/HW9/home.js
 
